@@ -1,6 +1,6 @@
 {
   "name": "@strong-roots-capital/next-session-generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Generator providing start of next session",
   "main": "dist/src/next-session-generator.js",
   "types": "dist/src/next-session-generator.d.ts",
