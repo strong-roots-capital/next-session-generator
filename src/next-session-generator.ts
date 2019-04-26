@@ -21,7 +21,7 @@ import { nextSessionOpen } from '@strong-roots-capital/next-session-open'
  * next session-open
  * @returns Generator providing stat of next sessions
  */
-export default function* nextSessionGenerator(timeframe: any, start: any) {
+export default function* nextSessionGenerator(timeframe: string, start: Date) {
 
     ow(timeframe, ow.string)
     ow(timeframe, ow.string.is(inTradingviewFormat))
