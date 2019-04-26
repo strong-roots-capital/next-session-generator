@@ -59,7 +59,7 @@ Acknowledgments
 
 ▸ **nextSessionGenerator**(timeframe: *`any`*, start: *`any`*): `IterableIterator`<`Date`>
 
-*Defined in [next-session-generator.ts:24](https://github.com/strong-roots-capital/next-session-generator/blob/1b24a2b/src/next-session-generator.ts#L24)*
+*Defined in [next-session-generator.ts:24](https://github.com/strong-roots-capital/next-session-generator/blob/50ce3df/src/next-session-generator.ts#L24)*
 
 Returns a generator providing the start of the next session.
 
