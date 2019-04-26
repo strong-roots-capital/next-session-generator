@@ -11,14 +11,28 @@ npm install @strong-roots-capital/next-session-generator
 ## Use
 
 ```typescript
-import { nextSessionGenerator } from '@strong-roots-capital/next-session-generator'
-// TODO: describe usage
+import nextSessionGenerator from '@strong-roots-capital/next-session-generator'
+
+console.log(new Date().toISOString())
+//=>2019-04-26T01:28:35.727Z
+
+const nextSession = nextSessionGenerator('1H', new Date())
+
+console.log(nextSession.next().value)
+//=>2019-04-26T02:00:00.000Z
+
+console.log(nextSession.next().value)
+//=>2019-04-26T03:00:00.000Z
+
+console.log(nextSession.next().value)
+//=>2019-04-26T04:00:00.000Z
 ```
 
 ## Related
 
-TODO
+- [add-timeframe](https://github.com/strong-roots-capital/add-timeframe)
+- [next-session-open](https://github.com/strong-roots-capital/next-session-open)
 
 ## Acknowledgments
 
-TODO
+- [inspiring article on ES6 generators](https://itnext.io/a-quick-practical-use-case-for-es6-generators-building-an-infinitely-repeating-array-49d74f555666)
