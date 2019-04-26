@@ -57,9 +57,9 @@ Acknowledgments
 
 ###  nextSessionGenerator
 
-▸ **nextSessionGenerator**(timeframe: *`any`*, start: *`any`*): `IterableIterator`<`Date`>
+▸ **nextSessionGenerator**(timeframe: *`string`*, start: *`Date`*): `IterableIterator`<`Date`>
 
-*Defined in [next-session-generator.ts:24](https://github.com/strong-roots-capital/next-session-generator/blob/50ce3df/src/next-session-generator.ts#L24)*
+*Defined in [next-session-generator.ts:24](https://github.com/strong-roots-capital/next-session-generator/blob/da3ba85/src/next-session-generator.ts#L24)*
 
 Returns a generator providing the start of the next session.
 
@@ -69,8 +69,8 @@ Returns a generator providing the start of the next session.
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| timeframe | `any` |  Length of session in Trading View format |
-| start | `any` |  Starting value of generator, rounded to start of next session-open |
+| timeframe | `string` |  Length of session in Trading View format |
+| start | `Date` |  Starting value of generator, rounded to start of next session-open |
 
 **Returns:** `IterableIterator`<`Date`>
 Generator providing stat of next sessions
